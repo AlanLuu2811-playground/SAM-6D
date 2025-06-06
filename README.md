@@ -32,6 +32,18 @@ In this work, we employ Segment Anything Model as an advanced starting point for
 
 ## Getting Started
 
+### Install by Docker
+```
+cd SAM-6D
+docker build -t 'sam6d' .
+docker run -it --entrypoint /bin/bash sam6d:latest
+conda activate sam6d
+git clone https://github.com/AlanLuu2811-playground/SAM-6D.git
+cd SAM-6D/SAM-6D
+chmod +x ./prepare.sh
+./prepare.sh
+```
+
 ### 1. Preparation
 Please clone the repository locally:
 ```
